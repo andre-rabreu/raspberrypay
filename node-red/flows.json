@@ -1,0 +1,2348 @@
+[
+    {
+        "id": "159c0dd92f2a2b38",
+        "type": "tab",
+        "label": "Pagar",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d9ad1c1d813e46a2",
+        "type": "tab",
+        "label": "Depositar",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e57c9fd6273fbeb3",
+        "type": "tab",
+        "label": "Cadastrar Usuário",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "25ef12856cfebdaf",
+        "type": "tab",
+        "label": "Opções do sistema",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4159eef759276b16",
+        "type": "tab",
+        "label": "API Server",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8b1d4624ab985940",
+        "type": "tab",
+        "label": "Ler cartão",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "fc11df0db8ade1a7",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "RaspberryPay",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "cf5335174419c62c",
+        "type": "ui_tab",
+        "name": "Cadastrar usuário",
+        "icon": "person",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8a0d5611b6d6fe9e",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "cf5335174419c62c",
+        "order": 1,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e4d72e7cbecc689d",
+        "type": "MySQLdatabase",
+        "name": "raspberrypay_db",
+        "host": "localhost",
+        "port": "3306",
+        "db": "raspberrypay_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "fdb5998ee2f8560d",
+        "type": "ui_tab",
+        "name": "Opções",
+        "icon": "settings",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ed0be9e010b95d07",
+        "type": "ui_group",
+        "name": "Menu",
+        "tab": "fdb5998ee2f8560d",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "65be778d2fdfa8bc",
+        "type": "ui_tab",
+        "name": "Pagar",
+        "icon": "credit_card",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "beacf31404f73cf4",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "65be778d2fdfa8bc",
+        "order": 1,
+        "disp": false,
+        "width": 8,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c59ec31d27c13be8",
+        "type": "ui_tab",
+        "name": "Depositar",
+        "icon": "account_balance",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "33967d1a5a3c2067",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "c59ec31d27c13be8",
+        "order": 1,
+        "disp": false,
+        "width": "8",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "56715436.c2591c",
+        "type": "ui_tab",
+        "name": "Home Tab",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "6a4d510d.5de65",
+        "type": "ui_group",
+        "name": "Users",
+        "tab": "56715436.c2591c",
+        "order": 2,
+        "disp": true,
+        "width": "9",
+        "collapse": false
+    },
+    {
+        "id": "babb7861d9569fe5",
+        "type": "exec",
+        "z": "159c0dd92f2a2b38",
+        "command": "python3 /home/andreabreu/raspberrypay/read.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "10",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Ler cartão",
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "f7d5a75de74c02f6"
+            ],
+            [],
+            [
+                "90720dcf9811b178"
+            ]
+        ]
+    },
+    {
+        "id": "f7d5a75de74c02f6",
+        "type": "json",
+        "z": "159c0dd92f2a2b38",
+        "name": "json",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "82169abc88d12ea9"
+            ]
+        ]
+    },
+    {
+        "id": "90720dcf9811b178",
+        "type": "switch",
+        "z": "159c0dd92f2a2b38",
+        "name": "SIGTERM",
+        "property": "payload.signal",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "SIGTERM",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 300,
+        "wires": [
+            [
+                "98bee0264ff9c30d"
+            ]
+        ]
+    },
+    {
+        "id": "fa6c0d71d8a22f2d",
+        "type": "ui_spinner",
+        "z": "159c0dd92f2a2b38",
+        "group": "beacf31404f73cf4",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "name": "",
+        "kind": "circle",
+        "overlay": true,
+        "color": "#3fadb5",
+        "spinSize": 50,
+        "x": 380,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0fa458f89144ba98",
+        "type": "template",
+        "z": "159c0dd92f2a2b38",
+        "name": "Operação concluída",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Pagamento realizado com sucesso.",
+        "output": "str",
+        "x": 880,
+        "y": 400,
+        "wires": [
+            [
+                "76cf6e9b37bf5d30",
+                "2778f29120c6765b",
+                "477bc7475059a768"
+            ]
+        ]
+    },
+    {
+        "id": "98bee0264ff9c30d",
+        "type": "template",
+        "z": "159c0dd92f2a2b38",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Operação cancelada.",
+        "output": "str",
+        "x": 820,
+        "y": 300,
+        "wires": [
+            [
+                "e00c4c79170e0fcd",
+                "2778f29120c6765b"
+            ]
+        ]
+    },
+    {
+        "id": "6d5f12a985d33509",
+        "type": "change",
+        "z": "159c0dd92f2a2b38",
+        "name": "payload = false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "fa6c0d71d8a22f2d"
+            ]
+        ]
+    },
+    {
+        "id": "76cf6e9b37bf5d30",
+        "type": "ui_toast",
+        "z": "159c0dd92f2a2b38",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de sucesso",
+        "x": 970,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "e00c4c79170e0fcd",
+        "type": "ui_toast",
+        "z": "159c0dd92f2a2b38",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 820,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "43a6138cd3e64a7e",
+        "type": "complete",
+        "z": "159c0dd92f2a2b38",
+        "name": "Leitura finalizada",
+        "scope": [
+            "babb7861d9569fe5",
+            "90720dcf9811b178"
+        ],
+        "uncaught": false,
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "6d5f12a985d33509"
+            ]
+        ]
+    },
+    {
+        "id": "c98858e1df549e61",
+        "type": "ui_form",
+        "z": "159c0dd92f2a2b38",
+        "name": "Inserir valor",
+        "label": "Qual o valor do pagamento?",
+        "group": "beacf31404f73cf4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Valor",
+                "value": "valor",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "valor": ""
+        },
+        "payload": "",
+        "submit": "Registrar",
+        "cancel": "Cancelar",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "b516ba7749c3dddf"
+            ]
+        ]
+    },
+    {
+        "id": "82169abc88d12ea9",
+        "type": "change",
+        "z": "159c0dd92f2a2b38",
+        "name": "Definir número do cartão",
+        "rules": [
+            {
+                "t": "set",
+                "p": "card_number",
+                "pt": "flow",
+                "to": "payload.data",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b516ba7749c3dddf",
+        "type": "switch",
+        "z": "159c0dd92f2a2b38",
+        "name": "Verifica se positivo e não nulo",
+        "property": "payload.valor",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "babb7861d9569fe5",
+                "fa6c0d71d8a22f2d",
+                "345fc6512261f297"
+            ],
+            [
+                "5622f6052040567f"
+            ]
+        ]
+    },
+    {
+        "id": "7765094fa276d440",
+        "type": "ui_toast",
+        "z": "159c0dd92f2a2b38",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 700,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5622f6052040567f",
+        "type": "template",
+        "z": "159c0dd92f2a2b38",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "O valor precisa ser maior que 0.",
+        "output": "str",
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "7765094fa276d440"
+            ]
+        ]
+    },
+    {
+        "id": "5d7eb3cbf05cb46d",
+        "type": "function",
+        "z": "159c0dd92f2a2b38",
+        "name": "INSERT",
+        "func": "msg.topic = \"INSERT INTO Transactions (amount, card_number_fk) VALUES (-\" + flow.get(\"valor\") + \", \" + flow.get(\"card_number\") + \")\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 400,
+        "wires": [
+            [
+                "5db4207252538c8b",
+                "ac071cd3c035a634"
+            ]
+        ]
+    },
+    {
+        "id": "5db4207252538c8b",
+        "type": "mysql",
+        "z": "159c0dd92f2a2b38",
+        "mydb": "e4d72e7cbecc689d",
+        "name": "",
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "0fa458f89144ba98"
+            ]
+        ]
+    },
+    {
+        "id": "345fc6512261f297",
+        "type": "change",
+        "z": "159c0dd92f2a2b38",
+        "name": "Definir valor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "valor",
+                "pt": "flow",
+                "to": "payload.valor",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2a37a798e7198ca2",
+        "type": "complete",
+        "z": "159c0dd92f2a2b38",
+        "name": "Número do cartão coletado",
+        "scope": [
+            "82169abc88d12ea9"
+        ],
+        "uncaught": false,
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "5d7eb3cbf05cb46d"
+            ]
+        ]
+    },
+    {
+        "id": "a69179f00704058c",
+        "type": "catch",
+        "z": "159c0dd92f2a2b38",
+        "name": "Erro",
+        "scope": [
+            "5db4207252538c8b"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "f6085540385cbfa8"
+            ]
+        ]
+    },
+    {
+        "id": "f6085540385cbfa8",
+        "type": "template",
+        "z": "159c0dd92f2a2b38",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "O cartão não está associado a nenhum usuário ativo.",
+        "output": "str",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "3583067b9790ea39"
+            ]
+        ]
+    },
+    {
+        "id": "3583067b9790ea39",
+        "type": "ui_toast",
+        "z": "159c0dd92f2a2b38",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 580,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2778f29120c6765b",
+        "type": "change",
+        "z": "159c0dd92f2a2b38",
+        "name": "Apagar valor",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "valor",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "477bc7475059a768",
+        "type": "change",
+        "z": "159c0dd92f2a2b38",
+        "name": "Apagar número do cartão",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "card_number",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac071cd3c035a634",
+        "type": "debug",
+        "z": "159c0dd92f2a2b38",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6ced205134ecc63e",
+        "type": "ui_template",
+        "z": "159c0dd92f2a2b38",
+        "group": "beacf31404f73cf4",
+        "name": "Virtual Keyboard",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div id=\"empty\"></div>\n<button class=\"VK\">V-KeyBoard On</button>\n\n<!-- The Modal -->\n<div id=\"myModal\" class=\"modal\">\n\n  <!-- Modal content -->\n  <div class=\"modal-content\">\n      <div class=\"modal-header\">\n      <span class=\"close\" onclick=\"closeModal()\">&times;</span>\n      <h2 id=\"vkeyname\" style=\"background-color: aliceblue !important; color: black !important; text-align: center; min-height: 30px;\">V-Keyboard</h2>\n    </div>\n    <div class=\"modal-body\">\n        <div id=\"keyboard\"></div>\n        <div>\n        </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.VK{\n    position: fixed;\n    top: 60px;\n    right: 20px;\n    height: 30px;\n}\n</style>\n\n<script>\n\nvar clickState = 1;\nvar btn = document.querySelector('.VK');\n\nbtn.addEventListener('click', function(){\n\n  if (clickState == 0) {\n    this.textContent = 'V-KeyBoard On';\n    modal = document.getElementById('myModal');\n    clickState = 1;\n  } else {\n    this.textContent = 'V-KeyBoard Off';\n    modal = document.getElementById('empty');\n    clickState = 0;\n  }\n\n});\n</script>\n\n<script>\n    // Get the modal\nvar modal = document.getElementById('myModal');\nvar inputTags;\nvar inputType;\nvar inputTarget;\n\nvar getinputs = function() {\n    inputTags = document.getElementsByTagName(\"input\");\n    console.log(inputTags)\n    for (var i = 0; i < inputTags.length; i++) {\n        inputTags[i].addEventListener('click', openModal, false)\n    }\n}\n\nsetTimeout(function(){ getinputs(); }, 1000);\n\nvar openModal = function() {\n    inputType = event.target.type\n    inputTarget = event.target\n    var layoutName;\n    if (inputType == \"number\"){\n        //inputTarget.type = \"number\" //hack because chrome doesn't allow setselection in number inputs\n        //inputTarget.value = \"\"\n        layoutName = \"numbers_only\"\n    }else{\n        layoutName = \"english\"\n    }\n    $('#vkeyname').text(event.target.value)\n    $('#keyboard').unbind().removeData();\n    modal.style.display = \"block\";\n    $('#keyboard').jkeyboard({\n        layout: layoutName,\n        input: $('#'+$(this).attr('id'))\n    });\n}\n\n\n// Get the <span> element that closes the modal\nvar span = document.getElementsByClassName(\"close\")[0];\n\n// When the user clicks anywhere outside of the modal, close it\nwindow.onclick = function(event) {\n    var source = event.target;\n    if (source == modal || source == span) {\n        closeModal(source)\n    }\n};\n\nvar closeModal = function(source){\n    //console.log(\"closing\")\n    modal.style.display = \"none\";\n   \n    if (inputType == \"number\"){\n        inputTarget.type = \"number\" //hack because chrome doesn't allow selectionstart on number inputs\n    }\n}\n\n    \n// the semi-colon before function invocation is a safety net against concatenated\n// scripts and/or other plugins which may not be closed properly.\n; (function ($, window, document, undefined) {\n\n    // undefined is used here as the undefined global variable in ECMAScript 3 is\n    // mutable (ie. it can be changed by someone else). undefined isn't really being\n    // passed in so we can ensure the value of it is truly undefined. In ES5, undefined\n    // can no longer be modified.\n\n    // window and document are passed through as local variable rather than global\n    // as this (slightly) quickens the resolution process and can be more efficiently\n    // minified (especially when both are regularly referenced in your plugin).\n\n    // Create the defaults once\n    var pluginName = \"jkeyboard\",\n        defaults = {\n            layout: \"english\",\n            input: $('#input'),\n            customLayouts: {\n                selectable: []\n            },\n        };\n\n\n    var function_keys = {\n        backspace: {\n            text: 'DEL',\n        },\n        return: {\n            text: 'Enter'\n        },\n        shift: {\n            text: 'Shift'\n        },\n        space: {\n            text: 'Space'\n        },\n        numeric_switch: {\n            text: '123',\n            command: function () {\n                this.createKeyboard('numeric');\n                this.events();\n            }\n        },\n        layout_switch: {\n            text: '<i class=\"fa fa-keyboard-o\" aria-hidden=\"true\"></i>',\n            command: function () {\n                var l = this.toggleLayout();\n                this.createKeyboard(l);\n                this.events();\n            }\n        },\n        character_switch: {\n            text: 'ABC',\n            command: function () {\n                this.createKeyboard(layout);\n                this.events();\n            }\n        },\n        symbol_switch: {\n            text: '#+=',\n            command: function () {\n                this.createKeyboard('symbolic');\n                this.events();\n            }\n        }\n    };\n\n\n    var layouts = {\n        selectable: ['english', 'russian','french', 'emoji'],\n        english: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        russian: [\n            ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х'],\n            ['ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э'],\n            ['shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        french: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l','à','ç'],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm','é','è', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        emoji: [\n            ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '😉', '😊',],\n            ['😋', '😎', '😍', '😘', '❤️', '🙏', '🔥', '✨', '👍','👌','💯'],\n            ['🤷', '🎉', '👏', '🤦', '🙌', '🎶', '💥', '🌈','✅','⭐', '👀'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],            \n        numeric: [\n            ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],\n            ['-', '/', ':', ';', '(', ')', '$', '&', '@', '\"'],\n            ['symbol_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n        ],\n        numbers_only: [\n            ['1', '2', '3',],\n            ['4', '5', '6',],\n            ['7', '8', '9',],\n            ['0', 'backspace', 'return'],\n        ],\n        symbolic: [\n            ['[', ']', '{', '}', '#', '%', '^', '*', '+', '='],\n            ['_', '\\\\', '|', '~', '<', '>'],\n            ['numeric_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n\n        ]\n    }\n\n    var shift = false, capslock = false, layout = 'english', layout_id = 0;\n\n    // The actual plugin constructor\n    function Plugin(element, options) {\n        this.element = element;\n        // jQuery has an extend method which merges the contents of two or\n        // more objects, storing the result in the first object. The first object\n        // is generally empty as we don't want to alter the default options for\n        // future instances of the plugin\n        this.settings = $.extend({}, defaults, options);\n        // Extend & Merge the cusom layouts\n        layouts = $.extend(true, {}, this.settings.customLayouts, layouts);\n        if (Array.isArray(this.settings.customLayouts.selectable)) {\n            $.merge(layouts.selectable, this.settings.customLayouts.selectable);\n        }\n        this._defaults = defaults;\n        this._name = pluginName;\n        this.init();\n    }\n\n    Plugin.prototype = {\n        init: function () {\n            layout = this.settings.layout;\n            this.createKeyboard(layout);\n            this.events();\n        },\n\n        setInput: function (newInputField) {\n            this.settings.input = newInputField;\n        },\n\n        createKeyboard: function (layout) {\n            shift = false;\n            capslock = false;\n\n            var keyboard_container = $('<ul/>').addClass('jkeyboard'),\n                me = this;\n\n            layouts[layout].forEach(function (line, index) {\n                var line_container = $('<li/>').addClass('jline');\n                line_container.append(me.createLine(line));\n                keyboard_container.append(line_container);\n            });\n\n            $(this.element).html('').append(keyboard_container);\n        },\n\n        createLine: function (line) {\n            var line_container = $('<ul/>');\n\n            line.forEach(function (key, index) {\n                var key_container = $('<li/>').addClass('jkey').data('command', key);\n\n                if (function_keys[key]) {\n                    key_container.addClass(key).html(function_keys[key].text);\n                }\n                else {\n                    key_container.addClass('letter').html(key);\n                }\n\n                line_container.append(key_container);\n            })\n\n            return line_container;\n        },\n\n        events: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift'),\n                space_key = $(this.element).find('.space'),\n                backspace_key = $(this.element).find('.backspace'),\n                return_key = $(this.element).find('.return'),\n\n                me = this,\n                fkeys = Object.keys(function_keys).map(function (k) {\n                    return '.' + k;\n                }).join(',');\n\n            letters.on('click', function () {\n                me.type((shift || capslock) ? $(this).text().toUpperCase() : $(this).text());\n            });\n\n            space_key.on('click', function () {\n                me.type(' ');\n            });\n\n            return_key.on('click', function () {\n                me.enter();\n            });\n\n            backspace_key.on('click', function () {\n                me.backspace();\n            });\n\n            shift_key.on('click', function () {\n                if (capslock) {\n                    me.toggleShiftOff();\n                    capslock = false;\n                } else {\n                    me.toggleShiftOn();\n                }\n            }).on('dblclick', function () {\n                capslock = true;\n            });\n\n\n            $(fkeys).on('click', function () {\n                var command = function_keys[$(this).data('command')].command;\n                if (!command) return;\n\n                command.call(me);\n            });\n        },\n\n        type: function (key) {\n            var input = this.settings.input,\n                val = input.val(),\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n\n            var max_length = $(input).attr(\"maxlength\");\n            if (start == end && end == val.length) {\n                if (!max_length || val.length < max_length) {\n                    input.val(val + key);\n                    input.change()\n                    $('#vkeyname').text(val + key)\n                }\n            } else {\n                if (input_node.type == \"text\"){\n                    var new_string = this.insertToString(start, end, val, key);\n                    input.val(new_string);\n                    start++;\n                    end = start;\n                    input_node.setSelectionRange(start, end);\n                    input.change()\n                }else if (input_node.type == \"number\"){\n                    input.val(val + key);\n                }else{\n                    input.val(val + key);\n                    input.change()\n                }\n                $('#vkeyname').text(val + key)\n                \n            }\n            input.trigger('focus');\n\n            if (shift && !capslock) {\n                this.toggleShiftOff();\n            }\n        },\n        \n        enter: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input_node.type == \"text\"){\n                val = val + \"\\n\";\n                $('#vkeyname').text(val)\n            }\n            input.change()\n            input.focus()\n            if (input_node.type == \"number\"){\n                modal.style.display = \"none\";\n            }\n        },\n\n        backspace: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input.type == \"text\"){\n                input.val(val.slice(0, start-1) + val.slice(start))\n                input_node.setSelectionRange(start-1, start-1);\n                //console.log(val)\n                $('#vkeyname').text(val)\n            }else{\n                input.val(val.slice(0,-1))\n                $('#vkeyname').text(val.slice(0,-1))\n            }\n            //input.change()\n            //input.focus()\n        },\n\n        toggleShiftOn: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.addClass('uppercase');\n            shift_key.addClass('active')\n            shift = true;\n        },\n\n        toggleShiftOff: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.removeClass('uppercase');\n            shift_key.removeClass('active');\n            shift = false;\n        },\n\n        toggleLayout: function () {\n            layout_id = layout_id || 0;\n            var plain_layouts = layouts.selectable;\n            layout_id++;\n\n            var current_id = layout_id % plain_layouts.length;\n            var SelectedLayoutName = plain_layouts[current_id];\n            $('#vkeyname').text('V-Keyboard ' + SelectedLayoutName )\n            return plain_layouts[current_id];\n        },\n\n        insertToString: function (start, end, string, insert_string) {\n            return string.substring(0, start) + insert_string + string.substring(end, string.length);\n        }\n    };\n\n        /*\n\t\t// A really lightweight plugin wrapper around the constructor,\n\t\t// preventing against multiple instantiations\n\t\t$.fn[ pluginName ] = function ( options ) {\n\t\t\t\treturn this.each(function() {\n\t\t\t\t\t\tif ( !$.data( this, \"plugin_\" + pluginName ) ) {\n\t\t\t\t\t\t\t\t$.data( this, \"plugin_\" + pluginName, new Plugin( this, options ) );\n\t\t\t\t\t\t}\n\t\t\t\t});\n\t\t};\n        */\n        var methods = {\n            init: function(options) {\n                if (!this.data(\"plugin_\" + pluginName)) {\n                    this.data(\"plugin_\" + pluginName, new Plugin(this, options));\n                }\n            },\n\t\t\tsetInput: function(content) {\n\t\t\t\tthis.data(\"plugin_\" + pluginName).setInput($(content));\n            },\n            setLayout: function(layoutname) {\n                // change layout if it is not match current\n                object = this.data(\"plugin_\" + pluginName);\n                if (typeof(layouts[layoutname]) !== 'undefined' && object.settings.layout != layoutname) {\n                    object.settings.layout = layoutname;\n                    object.createKeyboard(layoutname);\n                    object.events();\n                };\n            },\n        };\n\n\t\t$.fn[pluginName] = function (methodOrOptions) {\n            if (methods[methodOrOptions]) {\n                return methods[methodOrOptions].apply(this.first(), Array.prototype.slice.call( arguments, 1));\n            } else if (typeof methodOrOptions === 'object' || ! methodOrOptions) {\n                // Default to \"init\"\n                return methods.init.apply(this.first(), arguments);\n            } else {\n                $.error('Method ' +  methodOrOptions + ' does not exist on jQuery.tooltip');\n            }\n        };\n\n})(jQuery, window, document);\n</script>\n\n<style>\nbody {font-family: Arial, Helvetica, sans-serif;}\n\n.nr-dashboard-theme .nr-dashboard-template .md-button:not(:first-of-type) {\n    margin-top: 0px;\n}\n\n/* The Modal (background) */\n.modal {\n    display: none; /* Hidden by default */\n    position: fixed; /* Stay in place */\n    opacity:0.99;\n    z-index: 100; /* Sit on top */\n    left: 0;\n    top: 0;\n    width: 100%; /* Full width */\n    height: 100%; /* Full height */\n    overflow: auto; /* Enable scroll if needed */\n    background-color: rgb(0,0,0); /* Fallback color */\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n/* Modal Content */\n.modal-content {\n    position: fixed;\n    background-color: #fefefe;\n    margin: auto;\n    padding: 0;\n    bottom: 0%;\n    left: 50%;\n    transform: translate(-50%, 0%);\n    border: 1px solid #888;\n    width: fit-content;\n    max-width: 100%;\n    max-height: 100%;\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\n    -webkit-animation-name: animate;\n    -webkit-animation-duration: 0.4s;\n    animation-name: animate;\n    animation-duration: 0.4s\n}\n\n/* Add Animation */\n@-webkit-keyframes animate {\n    from {bottom:100%; opacity:0} \n    to {bottom:0%; opacity:1}\n}\n\n@keyframes animate {\n    from {bottom:100%; opacity:0}\n    to {bottom:0%; opacity:1}\n}\n\n/* The Close Button */\n.close {\n    color: black;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n    color: #000;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.modal-header {\n    padding: 2px 16px;\n    background-color: aliceblue;\n    color: white;\n}\n\n.modal-body {padding: 2px 16px;}\n\n.modal-footer {\n    padding: 2px 16px;\n    background-color: #5cb85c;\n    color: white;\n}\n\n.jkeyboard {\n  display: inline-block;\n}\n.jkeyboard, .jkeyboard .jline, .jkeyboard .jline ul {\n  display: block;\n  margin: 0;\n  padding: 0;\n}\n.jkeyboard .jline {\n  text-align: center;\n  margin-left: -14px;\n}\n.jkeyboard .jline ul li {\n  font-family: arial, sans-serif;\n  font-size: 20px;\n  display: inline-block;\n  border: 1px solid #468db3;\n  -webkit-box-shadow: 0 0 3px #468db3;\n  -webkit-box-shadow: inset 0 0 3px #468db3;\n  margin: 5px 0 1px 6px;\n  color: #000000;\n  border-radius: 5px;\n  width: 52px;\n  height: 52px;\n  box-sizing: border-box;\n  text-align: center;\n  line-height: 52px;\n  overflow: hidden;\n  cursor: pointer;\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: -moz-none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.jkeyboard .jline ul li.uppercase {\n  text-transform: uppercase;\n}\n.jkeyboard .jline ul li:hover, .jkeyboard .jline ul li:active {\n  background-color: #185a82;\n}\n.jkeyboard .jline .return {\n  width: 80px;\n}\n.jkeyboard .jline .space {\n  width: 366px;\n}\n.jkeyboard .jline .numeric_switch {\n  width: 65px;\n}\n.jkeyboard .jline .layout_switch {\n}\n.jkeyboard .jline .shift {\n  width: 60px;\n}\n.jkeyboard .jline .backspace {\n  width: 69px;\n}\n</style>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1100,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fcbfe710013b4bc8",
+        "type": "exec",
+        "z": "d9ad1c1d813e46a2",
+        "command": "python3 /home/andreabreu/raspberrypay/read.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "10",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Ler cartão",
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "93b6d83948633f31"
+            ],
+            [],
+            [
+                "cf653a317efe3a3f"
+            ]
+        ]
+    },
+    {
+        "id": "93b6d83948633f31",
+        "type": "json",
+        "z": "d9ad1c1d813e46a2",
+        "name": "json",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 630,
+        "y": 160,
+        "wires": [
+            [
+                "f80140ba2ee9b496"
+            ]
+        ]
+    },
+    {
+        "id": "cf653a317efe3a3f",
+        "type": "switch",
+        "z": "d9ad1c1d813e46a2",
+        "name": "SIGTERM",
+        "property": "payload.signal",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "SIGTERM",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 300,
+        "wires": [
+            [
+                "a63b0941b5ed8f45"
+            ]
+        ]
+    },
+    {
+        "id": "df5407a1a91b4f0c",
+        "type": "ui_spinner",
+        "z": "d9ad1c1d813e46a2",
+        "group": "33967d1a5a3c2067",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "name": "",
+        "kind": "circle",
+        "overlay": true,
+        "color": "#3fadb5",
+        "spinSize": 50,
+        "x": 380,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "4f88f31f6f7119d8",
+        "type": "template",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Operação concluída",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Depósito realizado com sucesso.",
+        "output": "str",
+        "x": 880,
+        "y": 400,
+        "wires": [
+            [
+                "48039982fcbe66b1",
+                "11e71c7b4ce75ddc",
+                "1165b4c6aecd2a70"
+            ]
+        ]
+    },
+    {
+        "id": "a63b0941b5ed8f45",
+        "type": "template",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Operação cancelada.",
+        "output": "str",
+        "x": 820,
+        "y": 300,
+        "wires": [
+            [
+                "4522ef09faf1c088",
+                "11e71c7b4ce75ddc"
+            ]
+        ]
+    },
+    {
+        "id": "d2fa1ad813dfce3c",
+        "type": "change",
+        "z": "d9ad1c1d813e46a2",
+        "name": "payload = false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "df5407a1a91b4f0c"
+            ]
+        ]
+    },
+    {
+        "id": "4522ef09faf1c088",
+        "type": "ui_toast",
+        "z": "d9ad1c1d813e46a2",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 820,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec9794b085b04d48",
+        "type": "complete",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Leitura finalizada",
+        "scope": [
+            "fcbfe710013b4bc8",
+            "cf653a317efe3a3f"
+        ],
+        "uncaught": false,
+        "x": 180,
+        "y": 320,
+        "wires": [
+            [
+                "d2fa1ad813dfce3c"
+            ]
+        ]
+    },
+    {
+        "id": "2588b2ce3fba7a98",
+        "type": "ui_form",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Inserir valor",
+        "label": "Quanto você quer depositar?",
+        "group": "33967d1a5a3c2067",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Valor",
+                "value": "valor",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "valor": ""
+        },
+        "payload": "",
+        "submit": "Registrar",
+        "cancel": "Cancelar",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "37a7a7ac90da69d1"
+            ]
+        ]
+    },
+    {
+        "id": "f80140ba2ee9b496",
+        "type": "change",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Definir número do cartão",
+        "rules": [
+            {
+                "t": "set",
+                "p": "card_number",
+                "pt": "flow",
+                "to": "payload.data",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 850,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "37a7a7ac90da69d1",
+        "type": "switch",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Verifica se positivo e não nulo",
+        "property": "payload.valor",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "str"
+            },
+            {
+                "t": "lte",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "fcbfe710013b4bc8",
+                "df5407a1a91b4f0c",
+                "b6fcd3170912bded"
+            ],
+            [
+                "de115ae6d82c76b9"
+            ]
+        ]
+    },
+    {
+        "id": "560d0327e064c247",
+        "type": "ui_toast",
+        "z": "d9ad1c1d813e46a2",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 700,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de115ae6d82c76b9",
+        "type": "template",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "O valor precisa ser maior que 0.",
+        "output": "str",
+        "x": 460,
+        "y": 100,
+        "wires": [
+            [
+                "560d0327e064c247"
+            ]
+        ]
+    },
+    {
+        "id": "5e67055b105d99e6",
+        "type": "function",
+        "z": "d9ad1c1d813e46a2",
+        "name": "INSERT",
+        "func": "msg.topic = \"INSERT INTO Transactions (amount, card_number_fk) VALUES (\" + flow.get(\"valor\") + \", \" + flow.get(\"card_number\") + \")\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 400,
+        "wires": [
+            [
+                "6a88a592db3af1ab",
+                "dd9763212f22e2f4"
+            ]
+        ]
+    },
+    {
+        "id": "6a88a592db3af1ab",
+        "type": "mysql",
+        "z": "d9ad1c1d813e46a2",
+        "mydb": "e4d72e7cbecc689d",
+        "name": "",
+        "x": 610,
+        "y": 400,
+        "wires": [
+            [
+                "4f88f31f6f7119d8"
+            ]
+        ]
+    },
+    {
+        "id": "b6fcd3170912bded",
+        "type": "change",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Definir valor",
+        "rules": [
+            {
+                "t": "set",
+                "p": "valor",
+                "pt": "flow",
+                "to": "payload.valor",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 330,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8824ef5927dea9a6",
+        "type": "complete",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Número do cartão coletado",
+        "scope": [
+            "f80140ba2ee9b496"
+        ],
+        "uncaught": false,
+        "x": 160,
+        "y": 400,
+        "wires": [
+            [
+                "5e67055b105d99e6"
+            ]
+        ]
+    },
+    {
+        "id": "f494d01c91266f5c",
+        "type": "catch",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Erro",
+        "scope": [
+            "6a88a592db3af1ab"
+        ],
+        "uncaught": false,
+        "x": 90,
+        "y": 500,
+        "wires": [
+            [
+                "30abaea80e43cb5f"
+            ]
+        ]
+    },
+    {
+        "id": "30abaea80e43cb5f",
+        "type": "template",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "O cartão não está associado a nenhum usuário ativo.",
+        "output": "str",
+        "x": 300,
+        "y": 500,
+        "wires": [
+            [
+                "f4d8085cec6618ed"
+            ]
+        ]
+    },
+    {
+        "id": "f4d8085cec6618ed",
+        "type": "ui_toast",
+        "z": "d9ad1c1d813e46a2",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 580,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "48039982fcbe66b1",
+        "type": "ui_toast",
+        "z": "d9ad1c1d813e46a2",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de sucesso",
+        "x": 970,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "1165b4c6aecd2a70",
+        "type": "change",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Apagar número do cartão",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "card_number",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1150,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11e71c7b4ce75ddc",
+        "type": "change",
+        "z": "d9ad1c1d813e46a2",
+        "name": "Apagar valor",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "valor",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd9763212f22e2f4",
+        "type": "debug",
+        "z": "d9ad1c1d813e46a2",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8d52f3567ca4a04f",
+        "type": "ui_template",
+        "z": "d9ad1c1d813e46a2",
+        "group": "33967d1a5a3c2067",
+        "name": "Virtual Keyboard",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div id=\"empty\"></div>\n<button class=\"VK\">V-KeyBoard On</button>\n\n<!-- The Modal -->\n<div id=\"myModal\" class=\"modal\">\n\n  <!-- Modal content -->\n  <div class=\"modal-content\">\n      <div class=\"modal-header\">\n      <span class=\"close\" onclick=\"closeModal()\">&times;</span>\n      <h2 id=\"vkeyname\" style=\"background-color: aliceblue !important; color: black !important; text-align: center; min-height: 30px;\">V-Keyboard</h2>\n    </div>\n    <div class=\"modal-body\">\n        <div id=\"keyboard\"></div>\n        <div>\n        </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.VK{\n    position: fixed;\n    top: 60px;\n    right: 20px;\n    height: 30px;\n}\n</style>\n\n<script>\n\nvar clickState = 1;\nvar btn = document.querySelector('.VK');\n\nbtn.addEventListener('click', function(){\n\n  if (clickState == 0) {\n    this.textContent = 'V-KeyBoard On';\n    modal = document.getElementById('myModal');\n    clickState = 1;\n  } else {\n    this.textContent = 'V-KeyBoard Off';\n    modal = document.getElementById('empty');\n    clickState = 0;\n  }\n\n});\n</script>\n\n<script>\n    // Get the modal\nvar modal = document.getElementById('myModal');\nvar inputTags;\nvar inputType;\nvar inputTarget;\n\nvar getinputs = function() {\n    inputTags = document.getElementsByTagName(\"input\");\n    console.log(inputTags)\n    for (var i = 0; i < inputTags.length; i++) {\n        inputTags[i].addEventListener('click', openModal, false)\n    }\n}\n\nsetTimeout(function(){ getinputs(); }, 1000);\n\nvar openModal = function() {\n    inputType = event.target.type\n    inputTarget = event.target\n    var layoutName;\n    if (inputType == \"number\"){\n        //inputTarget.type = \"number\" //hack because chrome doesn't allow setselection in number inputs\n        //inputTarget.value = \"\"\n        layoutName = \"numbers_only\"\n    }else{\n        layoutName = \"english\"\n    }\n    $('#vkeyname').text(event.target.value)\n    $('#keyboard').unbind().removeData();\n    modal.style.display = \"block\";\n    $('#keyboard').jkeyboard({\n        layout: layoutName,\n        input: $('#'+$(this).attr('id'))\n    });\n}\n\n\n// Get the <span> element that closes the modal\nvar span = document.getElementsByClassName(\"close\")[0];\n\n// When the user clicks anywhere outside of the modal, close it\nwindow.onclick = function(event) {\n    var source = event.target;\n    if (source == modal || source == span) {\n        closeModal(source)\n    }\n};\n\nvar closeModal = function(source){\n    //console.log(\"closing\")\n    modal.style.display = \"none\";\n   \n    if (inputType == \"number\"){\n        inputTarget.type = \"number\" //hack because chrome doesn't allow selectionstart on number inputs\n    }\n}\n\n    \n// the semi-colon before function invocation is a safety net against concatenated\n// scripts and/or other plugins which may not be closed properly.\n; (function ($, window, document, undefined) {\n\n    // undefined is used here as the undefined global variable in ECMAScript 3 is\n    // mutable (ie. it can be changed by someone else). undefined isn't really being\n    // passed in so we can ensure the value of it is truly undefined. In ES5, undefined\n    // can no longer be modified.\n\n    // window and document are passed through as local variable rather than global\n    // as this (slightly) quickens the resolution process and can be more efficiently\n    // minified (especially when both are regularly referenced in your plugin).\n\n    // Create the defaults once\n    var pluginName = \"jkeyboard\",\n        defaults = {\n            layout: \"english\",\n            input: $('#input'),\n            customLayouts: {\n                selectable: []\n            },\n        };\n\n\n    var function_keys = {\n        backspace: {\n            text: 'DEL',\n        },\n        return: {\n            text: 'Enter'\n        },\n        shift: {\n            text: 'Shift'\n        },\n        space: {\n            text: 'Space'\n        },\n        numeric_switch: {\n            text: '123',\n            command: function () {\n                this.createKeyboard('numeric');\n                this.events();\n            }\n        },\n        layout_switch: {\n            text: '<i class=\"fa fa-keyboard-o\" aria-hidden=\"true\"></i>',\n            command: function () {\n                var l = this.toggleLayout();\n                this.createKeyboard(l);\n                this.events();\n            }\n        },\n        character_switch: {\n            text: 'ABC',\n            command: function () {\n                this.createKeyboard(layout);\n                this.events();\n            }\n        },\n        symbol_switch: {\n            text: '#+=',\n            command: function () {\n                this.createKeyboard('symbolic');\n                this.events();\n            }\n        }\n    };\n\n\n    var layouts = {\n        selectable: ['english', 'russian','french', 'emoji'],\n        english: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        russian: [\n            ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х'],\n            ['ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э'],\n            ['shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        french: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l','à','ç'],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm','é','è', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        emoji: [\n            ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '😉', '😊',],\n            ['😋', '😎', '😍', '😘', '❤️', '🙏', '🔥', '✨', '👍','👌','💯'],\n            ['🤷', '🎉', '👏', '🤦', '🙌', '🎶', '💥', '🌈','✅','⭐', '👀'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],            \n        numeric: [\n            ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],\n            ['-', '/', ':', ';', '(', ')', '$', '&', '@', '\"'],\n            ['symbol_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n        ],\n        numbers_only: [\n            ['1', '2', '3',],\n            ['4', '5', '6',],\n            ['7', '8', '9',],\n            ['0', 'backspace', 'return'],\n        ],\n        symbolic: [\n            ['[', ']', '{', '}', '#', '%', '^', '*', '+', '='],\n            ['_', '\\\\', '|', '~', '<', '>'],\n            ['numeric_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n\n        ]\n    }\n\n    var shift = false, capslock = false, layout = 'english', layout_id = 0;\n\n    // The actual plugin constructor\n    function Plugin(element, options) {\n        this.element = element;\n        // jQuery has an extend method which merges the contents of two or\n        // more objects, storing the result in the first object. The first object\n        // is generally empty as we don't want to alter the default options for\n        // future instances of the plugin\n        this.settings = $.extend({}, defaults, options);\n        // Extend & Merge the cusom layouts\n        layouts = $.extend(true, {}, this.settings.customLayouts, layouts);\n        if (Array.isArray(this.settings.customLayouts.selectable)) {\n            $.merge(layouts.selectable, this.settings.customLayouts.selectable);\n        }\n        this._defaults = defaults;\n        this._name = pluginName;\n        this.init();\n    }\n\n    Plugin.prototype = {\n        init: function () {\n            layout = this.settings.layout;\n            this.createKeyboard(layout);\n            this.events();\n        },\n\n        setInput: function (newInputField) {\n            this.settings.input = newInputField;\n        },\n\n        createKeyboard: function (layout) {\n            shift = false;\n            capslock = false;\n\n            var keyboard_container = $('<ul/>').addClass('jkeyboard'),\n                me = this;\n\n            layouts[layout].forEach(function (line, index) {\n                var line_container = $('<li/>').addClass('jline');\n                line_container.append(me.createLine(line));\n                keyboard_container.append(line_container);\n            });\n\n            $(this.element).html('').append(keyboard_container);\n        },\n\n        createLine: function (line) {\n            var line_container = $('<ul/>');\n\n            line.forEach(function (key, index) {\n                var key_container = $('<li/>').addClass('jkey').data('command', key);\n\n                if (function_keys[key]) {\n                    key_container.addClass(key).html(function_keys[key].text);\n                }\n                else {\n                    key_container.addClass('letter').html(key);\n                }\n\n                line_container.append(key_container);\n            })\n\n            return line_container;\n        },\n\n        events: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift'),\n                space_key = $(this.element).find('.space'),\n                backspace_key = $(this.element).find('.backspace'),\n                return_key = $(this.element).find('.return'),\n\n                me = this,\n                fkeys = Object.keys(function_keys).map(function (k) {\n                    return '.' + k;\n                }).join(',');\n\n            letters.on('click', function () {\n                me.type((shift || capslock) ? $(this).text().toUpperCase() : $(this).text());\n            });\n\n            space_key.on('click', function () {\n                me.type(' ');\n            });\n\n            return_key.on('click', function () {\n                me.enter();\n            });\n\n            backspace_key.on('click', function () {\n                me.backspace();\n            });\n\n            shift_key.on('click', function () {\n                if (capslock) {\n                    me.toggleShiftOff();\n                    capslock = false;\n                } else {\n                    me.toggleShiftOn();\n                }\n            }).on('dblclick', function () {\n                capslock = true;\n            });\n\n\n            $(fkeys).on('click', function () {\n                var command = function_keys[$(this).data('command')].command;\n                if (!command) return;\n\n                command.call(me);\n            });\n        },\n\n        type: function (key) {\n            var input = this.settings.input,\n                val = input.val(),\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n\n            var max_length = $(input).attr(\"maxlength\");\n            if (start == end && end == val.length) {\n                if (!max_length || val.length < max_length) {\n                    input.val(val + key);\n                    input.change()\n                    $('#vkeyname').text(val + key)\n                }\n            } else {\n                if (input_node.type == \"text\"){\n                    var new_string = this.insertToString(start, end, val, key);\n                    input.val(new_string);\n                    start++;\n                    end = start;\n                    input_node.setSelectionRange(start, end);\n                    input.change()\n                }else if (input_node.type == \"number\"){\n                    input.val(val + key);\n                }else{\n                    input.val(val + key);\n                    input.change()\n                }\n                $('#vkeyname').text(val + key)\n                \n            }\n            input.trigger('focus');\n\n            if (shift && !capslock) {\n                this.toggleShiftOff();\n            }\n        },\n        \n        enter: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input_node.type == \"text\"){\n                val = val + \"\\n\";\n                $('#vkeyname').text(val)\n            }\n            input.change()\n            input.focus()\n            if (input_node.type == \"number\"){\n                modal.style.display = \"none\";\n            }\n        },\n\n        backspace: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input.type == \"text\"){\n                input.val(val.slice(0, start-1) + val.slice(start))\n                input_node.setSelectionRange(start-1, start-1);\n                //console.log(val)\n                $('#vkeyname').text(val)\n            }else{\n                input.val(val.slice(0,-1))\n                $('#vkeyname').text(val.slice(0,-1))\n            }\n            //input.change()\n            //input.focus()\n        },\n\n        toggleShiftOn: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.addClass('uppercase');\n            shift_key.addClass('active')\n            shift = true;\n        },\n\n        toggleShiftOff: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.removeClass('uppercase');\n            shift_key.removeClass('active');\n            shift = false;\n        },\n\n        toggleLayout: function () {\n            layout_id = layout_id || 0;\n            var plain_layouts = layouts.selectable;\n            layout_id++;\n\n            var current_id = layout_id % plain_layouts.length;\n            var SelectedLayoutName = plain_layouts[current_id];\n            $('#vkeyname').text('V-Keyboard ' + SelectedLayoutName )\n            return plain_layouts[current_id];\n        },\n\n        insertToString: function (start, end, string, insert_string) {\n            return string.substring(0, start) + insert_string + string.substring(end, string.length);\n        }\n    };\n\n        /*\n\t\t// A really lightweight plugin wrapper around the constructor,\n\t\t// preventing against multiple instantiations\n\t\t$.fn[ pluginName ] = function ( options ) {\n\t\t\t\treturn this.each(function() {\n\t\t\t\t\t\tif ( !$.data( this, \"plugin_\" + pluginName ) ) {\n\t\t\t\t\t\t\t\t$.data( this, \"plugin_\" + pluginName, new Plugin( this, options ) );\n\t\t\t\t\t\t}\n\t\t\t\t});\n\t\t};\n        */\n        var methods = {\n            init: function(options) {\n                if (!this.data(\"plugin_\" + pluginName)) {\n                    this.data(\"plugin_\" + pluginName, new Plugin(this, options));\n                }\n            },\n\t\t\tsetInput: function(content) {\n\t\t\t\tthis.data(\"plugin_\" + pluginName).setInput($(content));\n            },\n            setLayout: function(layoutname) {\n                // change layout if it is not match current\n                object = this.data(\"plugin_\" + pluginName);\n                if (typeof(layouts[layoutname]) !== 'undefined' && object.settings.layout != layoutname) {\n                    object.settings.layout = layoutname;\n                    object.createKeyboard(layoutname);\n                    object.events();\n                };\n            },\n        };\n\n\t\t$.fn[pluginName] = function (methodOrOptions) {\n            if (methods[methodOrOptions]) {\n                return methods[methodOrOptions].apply(this.first(), Array.prototype.slice.call( arguments, 1));\n            } else if (typeof methodOrOptions === 'object' || ! methodOrOptions) {\n                // Default to \"init\"\n                return methods.init.apply(this.first(), arguments);\n            } else {\n                $.error('Method ' +  methodOrOptions + ' does not exist on jQuery.tooltip');\n            }\n        };\n\n})(jQuery, window, document);\n</script>\n\n<style>\nbody {font-family: Arial, Helvetica, sans-serif;}\n\n.nr-dashboard-theme .nr-dashboard-template .md-button:not(:first-of-type) {\n    margin-top: 0px;\n}\n\n/* The Modal (background) */\n.modal {\n    display: none; /* Hidden by default */\n    position: fixed; /* Stay in place */\n    opacity:0.99;\n    z-index: 100; /* Sit on top */\n    left: 0;\n    top: 0;\n    width: 100%; /* Full width */\n    height: 100%; /* Full height */\n    overflow: auto; /* Enable scroll if needed */\n    background-color: rgb(0,0,0); /* Fallback color */\n    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */\n}\n\n/* Modal Content */\n.modal-content {\n    position: fixed;\n    background-color: #fefefe;\n    margin: auto;\n    padding: 0;\n    bottom: 0%;\n    left: 50%;\n    transform: translate(-50%, 0%);\n    border: 1px solid #888;\n    width: fit-content;\n    max-width: 100%;\n    max-height: 100%;\n    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);\n    -webkit-animation-name: animate;\n    -webkit-animation-duration: 0.4s;\n    animation-name: animate;\n    animation-duration: 0.4s\n}\n\n/* Add Animation */\n@-webkit-keyframes animate {\n    from {bottom:100%; opacity:0} \n    to {bottom:0%; opacity:1}\n}\n\n@keyframes animate {\n    from {bottom:100%; opacity:0}\n    to {bottom:0%; opacity:1}\n}\n\n/* The Close Button */\n.close {\n    color: black;\n    float: right;\n    font-size: 28px;\n    font-weight: bold;\n}\n\n.close:hover,\n.close:focus {\n    color: #000;\n    text-decoration: none;\n    cursor: pointer;\n}\n\n.modal-header {\n    padding: 2px 16px;\n    background-color: aliceblue;\n    color: white;\n}\n\n.modal-body {padding: 2px 16px;}\n\n.modal-footer {\n    padding: 2px 16px;\n    background-color: #5cb85c;\n    color: white;\n}\n\n.jkeyboard {\n  display: inline-block;\n}\n.jkeyboard, .jkeyboard .jline, .jkeyboard .jline ul {\n  display: block;\n  margin: 0;\n  padding: 0;\n}\n.jkeyboard .jline {\n  text-align: center;\n  margin-left: -14px;\n}\n.jkeyboard .jline ul li {\n  font-family: arial, sans-serif;\n  font-size: 20px;\n  display: inline-block;\n  border: 1px solid #468db3;\n  -webkit-box-shadow: 0 0 3px #468db3;\n  -webkit-box-shadow: inset 0 0 3px #468db3;\n  margin: 5px 0 1px 6px;\n  color: #000000;\n  border-radius: 5px;\n  width: 52px;\n  height: 52px;\n  box-sizing: border-box;\n  text-align: center;\n  line-height: 52px;\n  overflow: hidden;\n  cursor: pointer;\n  -webkit-touch-callout: none;\n  -webkit-user-select: none;\n  -khtml-user-select: none;\n  -moz-user-select: -moz-none;\n  -ms-user-select: none;\n  user-select: none;\n}\n.jkeyboard .jline ul li.uppercase {\n  text-transform: uppercase;\n}\n.jkeyboard .jline ul li:hover, .jkeyboard .jline ul li:active {\n  background-color: #185a82;\n}\n.jkeyboard .jline .return {\n  width: 80px;\n}\n.jkeyboard .jline .space {\n  width: 366px;\n}\n.jkeyboard .jline .numeric_switch {\n  width: 65px;\n}\n.jkeyboard .jline .layout_switch {\n}\n.jkeyboard .jline .shift {\n  width: 60px;\n}\n.jkeyboard .jline .backspace {\n  width: 69px;\n}\n</style>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1120,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c738a7c33a57de6",
+        "type": "change",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Limpar nome",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "user_name",
+                "pt": "flow"
+            },
+            {
+                "t": "delete",
+                "p": "user_surname",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1210,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d1445dacb0ba2dc",
+        "type": "mysql",
+        "z": "e57c9fd6273fbeb3",
+        "mydb": "e4d72e7cbecc689d",
+        "name": "",
+        "x": 870,
+        "y": 240,
+        "wires": [
+            [
+                "8c738a7c33a57de6",
+                "d4d7cf1fc3f7782a",
+                "58d9b743f69219c1"
+            ]
+        ]
+    },
+    {
+        "id": "3589d3374667a964",
+        "type": "function",
+        "z": "e57c9fd6273fbeb3",
+        "name": "SQL command",
+        "func": "msg.topic = \"INSERT INTO Users (card_number, user_name) VALUES ('\" + flow.get(\"num_cartao\") + \"', '\" + flow.get(\"nome\") + \" \" + flow.get(\"sobrenome\") + \"');\"\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 240,
+        "wires": [
+            [
+                "6d1445dacb0ba2dc"
+            ]
+        ]
+    },
+    {
+        "id": "39d2243de4780ea9",
+        "type": "change",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Definir nome",
+        "rules": [
+            {
+                "t": "set",
+                "p": "nome",
+                "pt": "flow",
+                "to": "payload.user_name",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "sobrenome",
+                "pt": "flow",
+                "to": "payload.user_surname",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5394da2f76dd10e",
+        "type": "ui_form",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Formulário de nome",
+        "label": "Preencha seus dados",
+        "group": "8a0d5611b6d6fe9e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Nome",
+                "value": "user_name",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Sobrenome",
+                "value": "user_surname",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "user_name": "",
+            "user_surname": ""
+        },
+        "payload": "",
+        "submit": "enviar",
+        "cancel": "cancelar",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": false,
+        "className": "",
+        "x": 140,
+        "y": 260,
+        "wires": [
+            [
+                "39d2243de4780ea9",
+                "d4c43598c4f360c5"
+            ]
+        ]
+    },
+    {
+        "id": "d4c43598c4f360c5",
+        "type": "function",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Gerar número do cartão",
+        "func": "let min = 1000;\nlet max = 9999;\n\nlet blocks = [];\n\nfor (let i = 0; i < 4; i++) {\n    let block = Math.floor(Math.random() * (max - min + 1)) + min;\n    blocks.push(block);\n}\n\nmsg.payload = blocks.join('');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "d75c385a5eacccbe"
+            ]
+        ]
+    },
+    {
+        "id": "dcd9ebe99888daf8",
+        "type": "inject",
+        "z": "e57c9fd6273fbeb3",
+        "d": true,
+        "name": "Reset do leitor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 100,
+        "wires": [
+            [
+                "cfa364634ba1f33f"
+            ]
+        ]
+    },
+    {
+        "id": "cfa364634ba1f33f",
+        "type": "exec",
+        "z": "e57c9fd6273fbeb3",
+        "d": true,
+        "command": "python3 /home/andreabreu/raspberrypay/read.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "true",
+        "timer": "0.1",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Ler cartão",
+        "x": 350,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "993ed2f1ba500026",
+        "type": "exec",
+        "z": "e57c9fd6273fbeb3",
+        "command": "python3 /home/andreabreu/raspberrypay/write.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "10",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Gravar cartão",
+        "x": 420,
+        "y": 320,
+        "wires": [
+            [
+                "ee7b9d837f332530",
+                "3589d3374667a964"
+            ],
+            [],
+            [
+                "f8c0b1e73a1227af"
+            ]
+        ]
+    },
+    {
+        "id": "f8c0b1e73a1227af",
+        "type": "switch",
+        "z": "e57c9fd6273fbeb3",
+        "name": "SIGTERM",
+        "property": "payload.signal",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "SIGTERM",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 660,
+        "y": 400,
+        "wires": [
+            [
+                "34c4321e41a393ff"
+            ]
+        ]
+    },
+    {
+        "id": "0cf9a8095f912e5a",
+        "type": "ui_spinner",
+        "z": "e57c9fd6273fbeb3",
+        "group": "8a0d5611b6d6fe9e",
+        "order": 1,
+        "width": 1,
+        "height": 1,
+        "name": "",
+        "kind": "circle",
+        "overlay": true,
+        "color": "#3fadb5",
+        "spinSize": 50,
+        "x": 580,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "ee7b9d837f332530",
+        "type": "template",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Operação concluída",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Cadastro realizado com sucesso.",
+        "output": "str",
+        "x": 680,
+        "y": 320,
+        "wires": [
+            [
+                "6971e374b08fac81"
+            ]
+        ]
+    },
+    {
+        "id": "34c4321e41a393ff",
+        "type": "template",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Operação cancelada",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Operação cancelada.",
+        "output": "str",
+        "x": 860,
+        "y": 440,
+        "wires": [
+            [
+                "6f54c0aaa39c9b1c",
+                "58d9b743f69219c1",
+                "8c738a7c33a57de6",
+                "d4d7cf1fc3f7782a"
+            ]
+        ]
+    },
+    {
+        "id": "feb4b5c8310ef78e",
+        "type": "change",
+        "z": "e57c9fd6273fbeb3",
+        "name": "payload = false",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 380,
+        "y": 540,
+        "wires": [
+            [
+                "0cf9a8095f912e5a"
+            ]
+        ]
+    },
+    {
+        "id": "6971e374b08fac81",
+        "type": "ui_toast",
+        "z": "e57c9fd6273fbeb3",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "green",
+        "sendall": false,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de sucesso",
+        "x": 910,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6f54c0aaa39c9b1c",
+        "type": "ui_toast",
+        "z": "e57c9fd6273fbeb3",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "red",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "Aviso!",
+        "name": "Notificação de cancelamento",
+        "x": 920,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5ceb5868f597d0f4",
+        "type": "complete",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Leitura finalizada",
+        "scope": [
+            "993ed2f1ba500026"
+        ],
+        "uncaught": false,
+        "x": 140,
+        "y": 540,
+        "wires": [
+            [
+                "feb4b5c8310ef78e"
+            ]
+        ]
+    },
+    {
+        "id": "d75c385a5eacccbe",
+        "type": "change",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Definir número do cartão",
+        "rules": [
+            {
+                "t": "set",
+                "p": "num_cartao",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 460,
+        "wires": [
+            [
+                "0cf9a8095f912e5a",
+                "08b86e3ac630d829"
+            ]
+        ]
+    },
+    {
+        "id": "08b86e3ac630d829",
+        "type": "template",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Argumentos",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "-d {{flow.num_cartao}}",
+        "output": "str",
+        "x": 430,
+        "y": 400,
+        "wires": [
+            [
+                "993ed2f1ba500026"
+            ]
+        ]
+    },
+    {
+        "id": "58d9b743f69219c1",
+        "type": "change",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Limpar sobrenome",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "nome",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4d7cf1fc3f7782a",
+        "type": "change",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Limpar número do cartão",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "num_cartao",
+                "pt": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e38aee7ab693a74",
+        "type": "inject",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Correção manual",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 600,
+        "wires": [
+            [
+                "feb4b5c8310ef78e"
+            ]
+        ]
+    },
+    {
+        "id": "14dd7c07f6e4b323",
+        "type": "comment",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Leitura em branco",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "de8f820bd82e6df3",
+        "type": "comment",
+        "z": "e57c9fd6273fbeb3",
+        "name": "Coleta dos dados e gravação",
+        "info": "",
+        "x": 160,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7e631a1b8769c744",
+        "type": "ui_template",
+        "z": "e57c9fd6273fbeb3",
+        "group": "8a0d5611b6d6fe9e",
+        "name": "Virtual Keyboard",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div id=\"empty\"></div>\n<button class=\"VK\">V-KeyBoard On</button>\n\n<!-- The Modal -->\n<div id=\"myModal\" class=\"modal\">\n\n  <!-- Modal content -->\n  <div class=\"modal-content\">\n      <div class=\"modal-header\">\n      <span class=\"close\" onclick=\"closeModal()\">&times;</span>\n      <h2 id=\"vkeyname\" style=\"background-color: aliceblue !important; color: black !important; text-align: center; min-height: 30px;\">V-Keyboard</h2>\n    </div>\n    <div class=\"modal-body\">\n        <div id=\"keyboard\"></div>\n        <div>\n        </div>\n    </div>\n  </div>\n</div>\n\n<style>\n.VK{\n    position: fixed;\n    top: 60px;\n    right: 20px;\n    height: 30px;\n}\n</style>\n\n<script>\n\nvar clickState = 1;\nvar btn = document.querySelector('.VK');\n\nbtn.addEventListener('click', function(){\n\n  if (clickState == 0) {\n    this.textContent = 'V-KeyBoard On';\n    modal = document.getElementById('myModal');\n    clickState = 1;\n  } else {\n    this.textContent = 'V-KeyBoard Off';\n    modal = document.getElementById('empty');\n    clickState = 0;\n  }\n\n});\n</script>\n\n<script>\n    // Get the modal\nvar modal = document.getElementById('myModal');\nvar inputTags;\nvar inputType;\nvar inputTarget;\n\nvar getinputs = function() {\n    inputTags = document.getElementsByTagName(\"input\");\n    console.log(inputTags)\n    for (var i = 0; i < inputTags.length; i++) {\n        inputTags[i].addEventListener('click', openModal, false)\n    }\n}\n\nsetTimeout(function(){ getinputs(); }, 1000);\n\nvar openModal = function() {\n    inputType = event.target.type\n    inputTarget = event.target\n    var layoutName;\n    if (inputType == \"number\"){\n        //inputTarget.type = \"number\" //hack because chrome doesn't allow setselection in number inputs\n        //inputTarget.value = \"\"\n        layoutName = \"numbers_only\"\n    }else{\n        layoutName = \"english\"\n    }\n    $('#vkeyname').text(event.target.value)\n    $('#keyboard').unbind().removeData();\n    modal.style.display = \"block\";\n    $('#keyboard').jkeyboard({\n        layout: layoutName,\n        input: $('#'+$(this).attr('id'))\n    });\n}\n\n\n// Get the <span> element that closes the modal\nvar span = document.getElementsByClassName(\"close\")[0];\n\n// When the user clicks anywhere outside of the modal, close it\nwindow.onclick = function(event) {\n    var source = event.target;\n    if (source == modal || source == span) {\n        closeModal(source)\n    }\n};\n\nvar closeModal = function(source){\n    //console.log(\"closing\")\n    modal.style.display = \"none\";\n   \n    if (inputType == \"number\"){\n        inputTarget.type = \"number\" //hack because chrome doesn't allow selectionstart on number inputs\n    }\n}\n\n    \n// the semi-colon before function invocation is a safety net against concatenated\n// scripts and/or other plugins which may not be closed properly.\n; (function ($, window, document, undefined) {\n\n    // undefined is used here as the undefined global variable in ECMAScript 3 is\n    // mutable (ie. it can be changed by someone else). undefined isn't really being\n    // passed in so we can ensure the value of it is truly undefined. In ES5, undefined\n    // can no longer be modified.\n\n    // window and document are passed through as local variable rather than global\n    // as this (slightly) quickens the resolution process and can be more efficiently\n    // minified (especially when both are regularly referenced in your plugin).\n\n    // Create the defaults once\n    var pluginName = \"jkeyboard\",\n        defaults = {\n            layout: \"english\",\n            input: $('#input'),\n            customLayouts: {\n                selectable: []\n            },\n        };\n\n\n    var function_keys = {\n        backspace: {\n            text: 'DEL',\n        },\n        return: {\n            text: 'Enter'\n        },\n        shift: {\n            text: 'Shift'\n        },\n        space: {\n            text: 'Space'\n        },\n        numeric_switch: {\n            text: '123',\n            command: function () {\n                this.createKeyboard('numeric');\n                this.events();\n            }\n        },\n        layout_switch: {\n            text: '<i class=\"fa fa-keyboard-o\" aria-hidden=\"true\"></i>',\n            command: function () {\n                var l = this.toggleLayout();\n                this.createKeyboard(l);\n                this.events();\n            }\n        },\n        character_switch: {\n            text: 'ABC',\n            command: function () {\n                this.createKeyboard(layout);\n                this.events();\n            }\n        },\n        symbol_switch: {\n            text: '#+=',\n            command: function () {\n                this.createKeyboard('symbolic');\n                this.events();\n            }\n        }\n    };\n\n\n    var layouts = {\n        selectable: ['english', 'russian','french', 'emoji'],\n        english: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        russian: [\n            ['й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х'],\n            ['ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'ж', 'э'],\n            ['shift', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        french: [\n            ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p',],\n            ['a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l','à','ç'],\n            ['shift', 'z', 'x', 'c', 'v', 'b', 'n', 'm','é','è', 'backspace'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],\n        emoji: [\n            ['😀', '😁', '😂', '🤣', '😃', '😄', '😅', '😆', '😉', '😊',],\n            ['😋', '😎', '😍', '😘', '❤️', '🙏', '🔥', '✨', '👍','👌','💯'],\n            ['🤷', '🎉', '👏', '🤦', '🙌', '🎶', '💥', '🌈','✅','⭐', '👀'],\n            ['numeric_switch', 'layout_switch', 'space', 'return']\n        ],            \n        numeric: [\n            ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'],\n            ['-', '/', ':', ';', '(', ')', '$', '&', '@', '\"'],\n            ['symbol_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n        ],\n        numbers_only: [\n            ['1', '2', '3',],\n            ['4', '5', '6',],\n            ['7', '8', '9',],\n            ['0', 'backspace', 'return'],\n        ],\n        symbolic: [\n            ['[', ']', '{', '}', '#', '%', '^', '*', '+', '='],\n            ['_', '\\\\', '|', '~', '<', '>'],\n            ['numeric_switch', '.', ',', '?', '!', \"'\", 'backspace'],\n            ['character_switch', 'layout_switch', 'space', 'return'],\n\n        ]\n    }\n\n    var shift = false, capslock = false, layout = 'english', layout_id = 0;\n\n    // The actual plugin constructor\n    function Plugin(element, options) {\n        this.element = element;\n        // jQuery has an extend method which merges the contents of two or\n        // more objects, storing the result in the first object. The first object\n        // is generally empty as we don't want to alter the default options for\n        // future instances of the plugin\n        this.settings = $.extend({}, defaults, options);\n        // Extend & Merge the cusom layouts\n        layouts = $.extend(true, {}, this.settings.customLayouts, layouts);\n        if (Array.isArray(this.settings.customLayouts.selectable)) {\n            $.merge(layouts.selectable, this.settings.customLayouts.selectable);\n        }\n        this._defaults = defaults;\n        this._name = pluginName;\n        this.init();\n    }\n\n    Plugin.prototype = {\n        init: function () {\n            layout = this.settings.layout;\n            this.createKeyboard(layout);\n            this.events();\n        },\n\n        setInput: function (newInputField) {\n            this.settings.input = newInputField;\n        },\n\n        createKeyboard: function (layout) {\n            shift = false;\n            capslock = false;\n\n            var keyboard_container = $('<ul/>').addClass('jkeyboard'),\n                me = this;\n\n            layouts[layout].forEach(function (line, index) {\n                var line_container = $('<li/>').addClass('jline');\n                line_container.append(me.createLine(line));\n                keyboard_container.append(line_container);\n            });\n\n            $(this.element).html('').append(keyboard_container);\n        },\n\n        createLine: function (line) {\n            var line_container = $('<ul/>');\n\n            line.forEach(function (key, index) {\n                var key_container = $('<li/>').addClass('jkey').data('command', key);\n\n                if (function_keys[key]) {\n                    key_container.addClass(key).html(function_keys[key].text);\n                }\n                else {\n                    key_container.addClass('letter').html(key);\n                }\n\n                line_container.append(key_container);\n            })\n\n            return line_container;\n        },\n\n        events: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift'),\n                space_key = $(this.element).find('.space'),\n                backspace_key = $(this.element).find('.backspace'),\n                return_key = $(this.element).find('.return'),\n\n                me = this,\n                fkeys = Object.keys(function_keys).map(function (k) {\n                    return '.' + k;\n                }).join(',');\n\n            letters.on('click', function () {\n                me.type((shift || capslock) ? $(this).text().toUpperCase() : $(this).text());\n            });\n\n            space_key.on('click', function () {\n                me.type(' ');\n            });\n\n            return_key.on('click', function () {\n                me.enter();\n            });\n\n            backspace_key.on('click', function () {\n                me.backspace();\n            });\n\n            shift_key.on('click', function () {\n                if (capslock) {\n                    me.toggleShiftOff();\n                    capslock = false;\n                } else {\n                    me.toggleShiftOn();\n                }\n            }).on('dblclick', function () {\n                capslock = true;\n            });\n\n\n            $(fkeys).on('click', function () {\n                var command = function_keys[$(this).data('command')].command;\n                if (!command) return;\n\n                command.call(me);\n            });\n        },\n\n        type: function (key) {\n            var input = this.settings.input,\n                val = input.val(),\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n\n            var max_length = $(input).attr(\"maxlength\");\n            if (start == end && end == val.length) {\n                if (!max_length || val.length < max_length) {\n                    input.val(val + key);\n                    input.change()\n                    $('#vkeyname').text(val + key)\n                }\n            } else {\n                if (input_node.type == \"text\"){\n                    var new_string = this.insertToString(start, end, val, key);\n                    input.val(new_string);\n                    start++;\n                    end = start;\n                    input_node.setSelectionRange(start, end);\n                    input.change()\n                }else if (input_node.type == \"number\"){\n                    input.val(val + key);\n                }else{\n                    input.val(val + key);\n                    input.change()\n                }\n                $('#vkeyname').text(val + key)\n                \n            }\n            input.trigger('focus');\n\n            if (shift && !capslock) {\n                this.toggleShiftOff();\n            }\n        },\n        \n        enter: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input_node.type == \"text\"){\n                val = val + \"\\n\";\n                $('#vkeyname').text(val)\n            }\n            input.change()\n            input.focus()\n            if (input_node.type == \"number\"){\n                modal.style.display = \"none\";\n            }\n        },\n\n        backspace: function () {\n            var input = this.settings.input,\n                val = input.val();\n                input_node = input.get(0),\n                start = input_node.selectionStart,\n                end = input_node.selectionEnd;\n            if (input.type == \"text\"){\n                input.val(val.slice(0, start-1) + val.slice(start))\n                input_node.setSelectionRange(start-1, start-1);\n                //console.log(val)\n                $('#vkeyname').text(val)\n            }else{\n                input.val(val.slice(0,-1))\n                $('#vkeyname').text(val.slice(0,-1))\n            }\n            //input.change()\n            //input.focus()\n        },\n\n        toggleShiftOn: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.addClass('uppercase');\n            shift_key.addClass('active')\n            shift = true;\n        },\n\n        toggleShiftOff: function () {\n            var letters = $(this.element).find('.letter'),\n                shift_key = $(this.element).find('.shift');\n\n            letters.removeClass('uppercase');\n            shift_key.removeClass('active');\n            shift = false;\n        },\n\n        toggleLayout: function () {\n            layout_id = layout_id || 0;\n            var plain_layouts = layouts.selectable;\n            layout_id++;\n\n            var current_id = layout_id % plain_layouts.length;\n            var SelectedLayoutName = plain_layouts[current_id];\n            $('#vkeyname').text('V-Keyboard ' + SelectedLayoutName )\n            return plain_layouts[current_id];\n        },\n\n        insertToString: function (start, end, string, insert_string) {\n            return string.substring(0, start) + insert_string + string.substring(end, string.length);\n        }\n    };\n\n        /*\n\t\t// A really lightweight plugin wrapper around the constructor,\n\t\t// preventing against multiple instantiations\n\t\t$.fn[ pluginName ] = function ( options ) {\n\t\t\t\treturn this.each(function() {\n\t\t\t\t\t\tif ( !$.data( this, \"plugin_\" + pluginName ) ) {\n\t\t\t\t\t\t\t\t$.data( this, \"plugin_\" + pluginName, new Plugin( this, options ) );\n\t\t\t\t\t\t}\n\t\t\t\t});\n\t\t};\n        */\n        var methods = {\n            init: function(options) {\n                if (!this.data(\"plugin_\" + pluginName)) {\n                    this.data(\"plugin_\" + pluginName, new Plugin(this, options));\n                }\n            },\n\t\t\tsetInput: function(content) {\n\t\t\t\tthis.data(\"plugin_\" + pluginName).setInput($(content));\n            },\n            setLayout: function(layoutname) {\n                // change layout if it is not match current\n                object = this.data(\"plugin_\" + pluginName);\n                if (typeof(layouts[layoutname]) !== 'undefined' && object.settings.layout != layoutname) {\n                    object.settings.layout = layoutname;\n                    object.createKeyboard(layoutname);\n                    object.events();\n                };\n            },\n        };\n\n\t\t$.fn[pluginName] = function (methodOrOptions) {\n            if (methods[methodOrOptions]) {\n                return methods[methodOrOptions].apply(this.first(), Array.prototype.slice.call( arguments, 1));\n            } else if (typeof methodOrOptions === 'object' || ! methodOrOptions) {\n                // Default to \"init\"\n                return methods.init.apply(this.first(), arguments);\n            } else {\n                $.error('Method ' +  methodOrOptions + ' does not exist on jQuery.tooltip');\n            }\n        };\n\n})(jQuery, window, document);\n</script>\n\n<style>\n    body {\n        font-family: Arial, Helvetica, sans-serif;\n    }\n\n    .nr-dashboard-theme .nr-dashboard-template .md-button:not(:first-of-type) {\n        margin-top: 0px;\n    }\n\n    /* The Modal (background) */\n    .modal {\n        display: none;\n        /* Hidden by default */\n        position: fixed;\n        /* Stay in place */\n        opacity: 0.99;\n        z-index: 100;\n        /* Sit on top */\n        left: 0;\n        top: 0;\n        width: 100%;\n        /* Full width */\n        height: 100%;\n        /* Full height */\n        overflow: auto;\n        /* Enable scroll if needed */\n        background-color: rgb(0, 0, 0);\n        /* Fallback color */\n        background-color: rgba(0, 0, 0, 0.4);\n        /* Black w/ opacity */\n    }\n\n    /* Modal Content */\n    .modal-content {\n        position: fixed;\n        background-color: #fefefe;\n        margin: auto;\n        padding: 0;\n        bottom: 0%;\n        left: 50%;\n        transform: translate(-50%, 0%);\n        border: 1px solid #888;\n        width: fit-content;\n        max-width: 100%;\n        max-height: 100%;\n        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);\n        -webkit-animation-name: animate;\n        -webkit-animation-duration: 0.4s;\n        animation-name: animate;\n        animation-duration: 0.4s\n    }\n\n    /* Add Animation */\n    @-webkit-keyframes animate {\n        from {\n            bottom: 100%;\n            opacity: 0\n        }\n\n        to {\n            bottom: 0%;\n            opacity: 1\n        }\n    }\n\n    @keyframes animate {\n        from {\n            bottom: 100%;\n            opacity: 0\n        }\n\n        to {\n            bottom: 0%;\n            opacity: 1\n        }\n    }\n\n    /* The Close Button */\n    .close {\n        color: black;\n        float: right;\n        font-size: 28px;\n        font-weight: bold;\n    }\n\n    .close:hover,\n    .close:focus {\n        color: #000;\n        text-decoration: none;\n        cursor: pointer;\n    }\n\n    .modal-header {\n        padding: 2px 16px;\n        background-color: aliceblue;\n        color: white;\n    }\n\n    .modal-body {\n        padding: 2px 16px;\n    }\n\n    .modal-footer {\n        padding: 2px 16px;\n        background-color: #5cb85c;\n        color: white;\n    }\n\n    /* Container do teclado */\n    .jkeyboard {\n    display: block;\n    width: auto;\n    max-width: 100%;\n    margin: 0 auto;\n    box-sizing: border-box;\n    }\n    \n    /* Cada linha (ul) como flex não-wrap para evitar quebra de tecla em nova linha */\n    .jkeyboard .jline {\n    text-align: center;\n    margin: 0;\n    padding: 0;\n    }\n    \n    /* Use o UL interno como flex container sem wrap */\n    .jkeyboard .jline ul {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    flex-wrap: nowrap; /* important: não quebrar linhas */\n    margin: 0;\n    padding: 0;\n    list-style: none;\n    box-sizing: border-box;\n    }\n    \n    /* Teclas — TAMANHO FIXO (como no seu código original) */\n    .jkeyboard .jline ul li {\n    font-family: arial, sans-serif;\n    font-size: 12px;\n    display: inline-block;\n    border: 1px solid #468db3;\n    -webkit-box-shadow: 0 0 3px #468db3;\n    box-shadow: inset 0 0 3px #468db3;\n    margin: 3px 4px 1px 4px; /* mantém espaçamento semelhante ao original */\n    color: #000000;\n    border-radius: 5px;\n    width: 31px; /* largura fixa original */\n    height: 31px; /* altura fixa original */\n    box-sizing: border-box;\n    text-align: center;\n    line-height: 31px;\n    overflow: hidden;\n    cursor: pointer;\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none;\n    }\n    \n    /* Uppercase visual */\n    .jkeyboard .jline ul li.uppercase {\n    text-transform: uppercase;\n    }\n    \n    /* Hover */\n    .jkeyboard .jline ul li:hover,\n    .jkeyboard .jline ul li:active {\n    background-color: #185a82;\n    color: #fff;\n    }\n    \n    /* Tamanhos especiais (os mesmos do seu CSS original) */\n    .jkeyboard .jline .return {\n    width: 48px;\n    line-height: 48px; /* se quiser visual maior verticalmente */\n    height: 31px; /* mantém altura geral */\n    }\n    \n    .jkeyboard .jline .space {\n    width: 220px;\n    height: 31px;\n    line-height: 31px;\n    }\n    \n    .jkeyboard .jline .numeric_switch {\n    width: 39px;\n    height: 31px;\n    }\n    \n    .jkeyboard .jline .shift {\n    width: 36px;\n    height: 31px;\n    }\n    \n    .jkeyboard .jline .backspace {\n    width: 41px;\n    height: 31px;\n    }\n    \n    /* Modal content — permita maior largura para evitar quebra */\n    .modal-content {\n    position: fixed;\n    background-color: #fefefe;\n    margin: auto;\n    padding: 0;\n    bottom: 0%;\n    left: 50%;\n    transform: translateX(-50%);\n    border: 1px solid #888;\n    width: auto; /* deixa o conteúdo ditar largura */\n    max-width: 100%;\n    max-height: 100%;\n    box-shadow: 0 4px 8px rgba(0,0,0,0.2);\n    animation-duration: 0.4s;\n    box-sizing: border-box;\n    }\n    \n    /* Se o teclado ficar maior que a tela, vamos reduzir a escala gradualmente\n    em pontos de corte — isso mantém teclas com tamanho fixo, mas faz o conjunto caber. */\n    @media (max-width: 480px) {\n    /* Ajuste fino: escala para 0.9 quando a largura estiver abaixo de 480px */\n    .jkeyboard { transform-origin: center bottom; transform: scale(0.95); }\n    }\n    \n    @media (max-width: 420px) {\n    /* escala mais agressiva para telas muito pequenas */\n    .jkeyboard { transform-origin: center bottom; transform: scale(0.85); }\n    }\n    \n    @media (max-width: 360px) {\n    /* escala mínima para telefones bem estreitos */\n    .jkeyboard { transform-origin: center bottom; transform: scale(0.78); }\n    }\n    \n    /* Caso queira evitar que o modal gere scroll horizontal, mantenha overflow-x oculto */\n    .modal {\n    overflow-x: hidden;\n    }\n</style>",
+        "storeOutMessages": false,
+        "fwdInMessages": false,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 600,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8bd3907cd728524c",
+        "type": "ui_button",
+        "z": "25ef12856cfebdaf",
+        "name": "",
+        "group": "ed0be9e010b95d07",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Desligar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "power_settings_new",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "038f8a13f0d9511c"
+            ]
+        ]
+    },
+    {
+        "id": "e35e5949547cd46a",
+        "type": "comment",
+        "z": "25ef12856cfebdaf",
+        "name": "Desligar o sistema",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "7bd8d9cea8ca9e02",
+        "type": "ui_toast",
+        "z": "25ef12856cfebdaf",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Sim",
+        "cancel": "Cancelar",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmação",
+        "x": 310,
+        "y": 100,
+        "wires": [
+            [
+                "193b22b92e36d77f"
+            ]
+        ]
+    },
+    {
+        "id": "038f8a13f0d9511c",
+        "type": "template",
+        "z": "25ef12856cfebdaf",
+        "name": "Mensagem",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Tem certeza que deseja desligar o sistema?",
+        "output": "str",
+        "x": 210,
+        "y": 180,
+        "wires": [
+            [
+                "7bd8d9cea8ca9e02"
+            ]
+        ]
+    },
+    {
+        "id": "193b22b92e36d77f",
+        "type": "switch",
+        "z": "25ef12856cfebdaf",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Sim",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 180,
+        "wires": [
+            [
+                "b433515974e82f3d"
+            ]
+        ]
+    },
+    {
+        "id": "b433515974e82f3d",
+        "type": "exec",
+        "z": "25ef12856cfebdaf",
+        "command": "bash /home/andreabreu/raspberrypay/poweroff_pi.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Desligar",
+        "x": 600,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3479e5bc770a9532",
+        "type": "ui_button",
+        "z": "25ef12856cfebdaf",
+        "name": "",
+        "group": "ed0be9e010b95d07",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Reiniciar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "autorenew",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 100,
+        "y": 340,
+        "wires": [
+            [
+                "5ba0e65616ac8ca1"
+            ]
+        ]
+    },
+    {
+        "id": "25261444f059e372",
+        "type": "ui_toast",
+        "z": "25ef12856cfebdaf",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "Sim",
+        "cancel": "Cancelar",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Confirmação",
+        "x": 310,
+        "y": 340,
+        "wires": [
+            [
+                "16ce13844098c51c"
+            ]
+        ]
+    },
+    {
+        "id": "5ba0e65616ac8ca1",
+        "type": "template",
+        "z": "25ef12856cfebdaf",
+        "name": "Mensagem",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "Tem certeza que deseja reiniciar o sistema?",
+        "output": "str",
+        "x": 210,
+        "y": 420,
+        "wires": [
+            [
+                "25261444f059e372"
+            ]
+        ]
+    },
+    {
+        "id": "16ce13844098c51c",
+        "type": "switch",
+        "z": "25ef12856cfebdaf",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Sim",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 470,
+        "y": 420,
+        "wires": [
+            [
+                "1d277d84cc252024"
+            ]
+        ]
+    },
+    {
+        "id": "1d277d84cc252024",
+        "type": "exec",
+        "z": "25ef12856cfebdaf",
+        "command": "bash /home/andreabreu/raspberrypay/restart_pi.sh",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Desligar",
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "78f53f7e3b5df939",
+        "type": "comment",
+        "z": "25ef12856cfebdaf",
+        "name": "Reiniciar o sistema",
+        "info": "",
+        "x": 130,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "b920a500ba9ec25e",
+        "type": "inject",
+        "z": "4159eef759276b16",
+        "name": "Iniciar servidor",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 60,
+        "wires": [
+            [
+                "269658040aca1de7"
+            ]
+        ]
+    },
+    {
+        "id": "269658040aca1de7",
+        "type": "exec",
+        "z": "4159eef759276b16",
+        "command": "node /home/andreabreu/raspberrypay/api/server.js",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 470,
+        "y": 60,
+        "wires": [
+            [
+                "570b70150c458eae"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "570b70150c458eae",
+        "type": "debug",
+        "z": "4159eef759276b16",
+        "name": "debug 16",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "bd07cf77de7ca3a4",
+        "type": "exec",
+        "z": "8b1d4624ab985940",
+        "command": "python3 /home/andreabreu/raspberrypay/read.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "10",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Ler cartão",
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "5d0b817daba240e5"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a9c138706421cf0e",
+        "type": "inject",
+        "z": "8b1d4624ab985940",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 80,
+        "wires": [
+            [
+                "bd07cf77de7ca3a4"
+            ]
+        ]
+    },
+    {
+        "id": "5d0b817daba240e5",
+        "type": "json",
+        "z": "8b1d4624ab985940",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 630,
+        "y": 80,
+        "wires": [
+            [
+                "adad3f6d3afa48b4"
+            ]
+        ]
+    },
+    {
+        "id": "adad3f6d3afa48b4",
+        "type": "debug",
+        "z": "8b1d4624ab985940",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 80,
+        "wires": []
+    }
+]
